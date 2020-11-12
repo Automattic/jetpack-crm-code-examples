@@ -32,7 +32,7 @@ function jetpackCRM_custom_admin_init(){
 
 	// Here we add the filter which will call our function lower down in this file
 	// ... when a contact's vital tabs are loaded
-	add_filter( 'zbs-contact-vital-tabs', 'jetpackCRM_custom_modifyTabs', 10, 2);
+	add_filter( 'jetpack-crm-contact-vital-tabs', 'jetpackCRM_custom_modifyTabs', 10, 2);
 
 
 } add_action('admin_init','jetpackCRM_custom_admin_init');
